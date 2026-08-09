@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Economics Job Market Candidate</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for an academic look -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Lora', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        academic: {
+                            blue: '#1e3a8a', // Deep navy
+                            link: '#2563eb', // Standard link blue
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .font-serif { font-family: 'Lora', serif; }
+        .nav-link { transition: color 0.2s; }
+        .nav-link:hover { color: #2563eb; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased leading-relaxed">
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold font-serif text-academic-blue">Your Name</a>
+            <div class="space-x-6 text-sm font-semibold hidden sm:block">
+                <a href="#about" class="nav-link text-gray-600">About</a>
+                <a href="#research" class="nav-link text-gray-600">Research</a>
+                <a href="#teaching" class="nav-link text-gray-600">Teaching</a>
+                <a href="#references" class="nav-link text-gray-600">References</a>
+                <!-- Link your CV here -->
+                <a href="CV_YourName.pdf" target="_blank" class="text-academic-link hover:underline">CV (PDF)</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="sm:hidden">
+                <a href="CV_YourName.pdf" target="_blank" class="text-academic-link font-semibold text-sm mr-4">CV</a>
+                <a href="#research" class="text-gray-600 font-semibold text-sm">Research</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-6 py-12">
+
+        <!-- About / Hero Section -->
+        <section id="about" class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-20 pt-8">
+            <!-- Profile Image (Upload profile.jpg to your repo) -->
+            <div class="w-48 h-48 shrink-0 rounded-full overflow-hidden border-4 border-white shadow-lg bg-gray-200">
+                <img src="https://via.placeholder.com/400" alt="Your Name" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="text-center md:text-left flex-1">
+                <h1 class="text-4xl font-bold text-academic-blue mb-2">Your Name</h1>
+                <p class="text-xl text-gray-700 mb-4">Ph.D. Candidate in Economics, [Your University]</p>
+                
+                <div class="mb-4">
+                    <p><strong>Research Fields:</strong> Applied Microeconomics, Labor Economics</p>
+                    <p><strong>Email:</strong> <a href="mailto:your.email@university.edu" class="text-academic-link hover:underline">your.email@university.edu</a></p>
+                </div>
+
+                <p class="text-gray-600 mb-6 max-w-2xl text-justify">
+                    I am a Ph.D. candidate in the Department of Economics at [Your University]. I will be on the 2026-2027 job market and am available for interviews. My research focuses on [1-2 sentences about your overarching research agenda].
+                </p>
+
+                <!-- High Priority Buttons -->
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="JMP_YourName.pdf" target="_blank" class="bg-academic-blue text-white px-6 py-2 rounded shadow hover:bg-blue-800 transition font-semibold">
+                        📄 Job Market Paper
+                    </a>
+                    <a href="CV_YourName.pdf" target="_blank" class="bg-white border border-gray-300 text-gray-700 px-6 py-2 rounded shadow-sm hover:bg-gray-50 transition font-semibold">
+                        📄 Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200 mb-16">
+
+        <!-- Research Section -->
+        <section id="research" class="mb-20 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-academic-blue mb-8 border-b-2 border-academic-blue inline-block pb-2">Research</h2>
+
+            <!-- Job Market Paper -->
+            <div class="mb-10">
+                <h3 class="text-xl font-bold text-gray-900">
+                    <a href="JMP_YourName.pdf" class="hover:text-academic-link transition">The Impact of Policy X on Labor Market Outcomes</a>
+                </h3>
+                <p class="text-sm font-semibold text-red-700 mb-2 mt-1">JOB MARKET PAPER</p>
+                
+                <div class="flex gap-3 text-sm font-medium mb-3">
+                    <a href="JMP_YourName.pdf" target="_blank" class="text-academic-link hover:underline">[PDF]</a>
+                    <button onclick="toggleAbstract('abstract-jmp')" class="text-academic-link hover:underline focus:outline-none">[Toggle Abstract]</button>
+                </div>
+                
+                <div id="abstract-jmp" class="text-gray-600 text-justify text-sm bg-gray-100 p-4 rounded-md border border-gray-200 block">
+                    <strong>Abstract:</strong> This paper evaluates the causal impact of Policy X on labor market outcomes using a difference-in-differences approach. By exploiting state-level variation in the implementation of the policy between 2010 and 2018, I find that the policy increased employment by 2.5 percentage points among the targeted demographic. The results are robust to various specifications and highlight the importance of [Key Mechanism]. These findings have significant implications for the optimal design of labor policies.
+                </div>
+            </div>
+
+            <!-- Working Papers -->
+            <h3 class="text-2xl font-semibold text-gray-800 mb-6">Working Papers</h3>
+            
+            <div class="mb-8">
+                <h4 class="text-lg font-bold text-gray-900">
+                    <a href="#" class="hover:text-academic-link transition">Another Interesting Paper Title</a>
+                </h4>
+                <p class="text-gray-700 mb-1">with <a href="#" class="text-academic-link hover:underline">Co-author Name</a></p>
+                <p class="text-sm text-gray-500 italic mb-2">Revise and Resubmit, Journal of Economics</p>
+                
+                <div class="flex gap-3 text-sm font-medium mb-3">
+                    <a href="#" class="text-academic-link hover:underline">[PDF]</a>
+                    <button onclick="toggleAbstract('abstract-wp1')" class="text-academic-link hover:underline focus:outline-none">[Abstract]</button>
+                </div>
+                
+                <div id="abstract-wp1" class="text-gray-600 text-justify text-sm hidden">
+                    <strong>Abstract:</strong> Here is the abstract for your working paper. Keep it concise. Committees appreciate brevity. You can hide these by default so the page is easy to scan.
+                </div>
+            </div>
+
+            <!-- Works in Progress -->
+            <h3 class="text-2xl font-semibold text-gray-800 mb-6 mt-12">Works in Progress</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>"Title of a project you are currently working on" (with Co-author Name)</li>
+                <li>"Another project title that shows you have an active pipeline"</li>
+            </ul>
+        </section>
+
+        <hr class="border-gray-200 mb-16">
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="mb-20 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-academic-blue mb-8 border-b-2 border-academic-blue inline-block pb-2">Teaching</h2>
+            
+            <p class="mb-6">
+                <a href="#" class="text-academic-link hover:underline font-semibold">[Download Teaching Evaluations PDF]</a>
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Primary Instructor, [Your University]</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                <li>Introductory Microeconomics (Summer 2024, Summer 2025)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Teaching Assistant, [Your University]</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Ph.D. Microeconomic Theory I (Fall 2023, Fall 2024)</li>
+                <li>Undergraduate Labor Economics (Spring 2023)</li>
+            </ul>
+        </section>
+
+        <hr class="border-gray-200 mb-16">
+
+        <!-- References Section -->
+        <section id="references" class="mb-20 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-academic-blue mb-8 border-b-2 border-academic-blue inline-block pb-2">References</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Advisor 1 -->
+                <div>
+                    <h3 class="font-bold text-gray-900">Prof. First Last (Chair)</h3>
+                    <p class="text-sm text-gray-600">Professor of Economics</p>
+                    <p class="text-sm text-gray-600">[Your University]</p>
+                    <a href="mailto:advisor1@university.edu" class="text-sm text-academic-link hover:underline">advisor1@university.edu</a>
+                </div>
+                <!-- Advisor 2 -->
+                <div>
+                    <h3 class="font-bold text-gray-900">Prof. First Last</h3>
+                    <p class="text-sm text-gray-600">Associate Professor of Economics</p>
+                    <p class="text-sm text-gray-600">[Your University]</p>
+                    <a href="mailto:advisor2@university.edu" class="text-sm text-academic-link hover:underline">advisor2@university.edu</a>
+                </div>
+                <!-- Advisor 3 -->
+                <div>
+                    <h3 class="font-bold text-gray-900">Prof. First Last</h3>
+                    <p class="text-sm text-gray-600">Assistant Professor of Economics</p>
+                    <p class="text-sm text-gray-600">[Your University]</p>
+                    <a href="mailto:advisor3@university.edu" class="text-sm text-academic-link hover:underline">advisor3@university.edu</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center text-sm">
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+        <p class="text-gray-400 mt-2">Hosted on GitHub Pages</p>
+    </footer>
+
+    <!-- Script for interactive elements (Toggle Abstracts) -->
+    <script>
+        function toggleAbstract(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+                element.classList.add('block');
+            } else {
+                element.classList.remove('block');
+                element.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
